@@ -1,8 +1,6 @@
 package edu.eci.dosw;
 
-//import edu.eci.dosw.model.Route;
-//import edu.eci.dosw.model.Segment;
-//import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
@@ -12,7 +10,7 @@ class RouteTest {
 
     @Test
     void shouldDetectBlockedRoute() {
-        Segment segment = new Segment(
+        segment segment = new segment(
                 "A", "B", 100, 2, 4, false, false
         );
 
@@ -23,8 +21,8 @@ class RouteTest {
 
     @Test
     void shouldCalculateTotalTime() {
-        Segment s1 = new Segment("A", "B", 100, 5, 4, false, true);
-        Segment s2 = new Segment("B", "C", 200, 3, 4, false, true);
+        segment s1 = new segment("A", "B", 100, 5, 4, false, true);
+        segment s2 = new segment("B", "C", 200, 3, 4, false, true);
 
         Route route = new Route("Ruta", List.of(s1, s2));
 
@@ -33,8 +31,8 @@ class RouteTest {
 
     @Test
     void shouldCalculateTotalDistance() {
-        Segment s1 = new Segment("A", "B", 100, 5, 4, false, true);
-        Segment s2 = new Segment("B", "C", 200, 3, 4, false, true);
+        segment s1 = new segment("A", "B", 100, 5, 4, false, true);
+        segment s2 = new segment("B", "C", 200, 3, 4, false, true);
 
         Route route = new Route("Ruta", List.of(s1, s2));
 
