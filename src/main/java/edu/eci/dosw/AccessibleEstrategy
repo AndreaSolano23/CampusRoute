@@ -1,0 +1,10 @@
+public class AccessibleStrategy implements RoutePreferenceStrategy {
+    @Override
+    public Route selectBest(List<Route> routes) {
+    return routes.stream()
+        .filter(r -> !r.isBlocked())
+        .filter(r -> !r.hasStairs())
+        .min(Comparator.comparingInt(Route:: totalDistanceMeters))
+        .orElse(null);
+}
+}

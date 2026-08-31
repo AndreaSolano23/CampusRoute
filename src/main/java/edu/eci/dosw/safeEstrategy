@@ -1,0 +1,10 @@
+public class SafeStrategy implements RoutePreferenceStrategy {
+    @Override
+    public Route selectBest(List<Route> routes) {
+    return routes.stream()
+        .filter(r -> !r.isBlocked())
+        .max(Comparator.comparingDouble(Route:: averageSecurity)
+            .thenComparing(Comparator.comparingInt(Route:: totalDistanceMeters).reversed()))
+        .orElse(null);
+}
+}
