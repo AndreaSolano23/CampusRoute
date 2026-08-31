@@ -21,28 +21,35 @@ El sistema de CampusRoute debe tener:
 - **RNF-01 (Seguridad):** Cifrado de las contraseñas de los usuarios almacenadas en la base de datos.
 - **RNF-02 (usabilidad):** Interfaz que permita hacer las consultas.
 
-## 2. Diagramas de caso de uso
+## 2. Historias de usuario 
 
 ### 2.1 Requerimiento Funcional 1
+```text
+Como [usuario de CampusRoute]
+Quiero [solicitar una ruta indicando mi preferencia de desplazamiento]
+Para [recibir la alternativa que mejor se ajuste a mi necesidad.]
+```
 
-Como usuario de CampusRoute
-Quiero solicitar una ruta indicando mi preferencia de desplazamiento
-Para recibir la alternativa que mejor se ajuste a mi necesidad.
 
 ### 2.2 Requerimiento Funcional 2
+```text
+Como [personal administrativo de CampusRoute]
+Quiero [Registrar eventos que afecten las rutas o edificios]
+Para [mantener actualizado el sistema. ]
+```
 
-Como personal administrativo de CampusRoute
-Quiero Registrar eventos que afecten las rutas o edificios
-Para mantener actualizado el sistema. 
 
 ### 2.3 Requerimiento Funcional 3
+```text
+Como [Invitado de CampusRoute]
+Quiero [Consultar edificios o instalaciones del campus]
+Para [conocer la ubicacion de los edificios.]
+```
 
-Como Invitado de CampusRoute
-Quiero Consultar edificios o instalaciones del campus
-Para conocer la ubicacion de los edificios. 
 
 ### 2.3 Requerimiento Funcional 4
-
-Como usuario de CampusRoute 
-Quiero Atenticarme mediante eciApp
-Para que el sistema reconozca mi tipo de usuario. 
+```text
+Como [usuario de CampusRoute]
+Quiero [Autenticarme mediante eciApp]
+Para [que el sistema reconozca mi tipo de usuario.]
+```
